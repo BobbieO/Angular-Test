@@ -3,13 +3,21 @@
 <head>
     <meta charset="utf-8">
     <title>Template Test</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="/css/angular.css">
 
 </head>
 <body>
 <h1>Angular Intro Fun!</h1>
-    <ul>
-        <li ng-repeat="number in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]" ng-if="number % 3 != 0">{{number}}</li>
-    </ul>
+    <h4>Numbers</h4>
+        <ul>
+            <li ng-repeat="number in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]" ng-hide="number % 3 != 0">{{number}}</li>
+        </ul>
+    <h4>Letters</h4>
+        <ul>
+            <li ng-repeat="letter in ['A', 'B', 'C', 'D', 'E', 'F']">{{letter | uppercase}}</li>
+            <li ng-repeat="letter in ['A', 'B', 'C', 'D', 'E', 'F']">{{letter | lowercase}}</li>
+        </ul>
 
 
 
