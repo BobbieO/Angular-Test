@@ -2,6 +2,11 @@ body {
     text-align: center;
 }
 
+.row {
+    margin-bottom: 2em;
+}
+
 .align {
     display: inline-block;
 }
+

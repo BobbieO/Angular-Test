@@ -43,16 +43,27 @@
                 <label for="GitHub">GitHub URL</label>
                 <input type="text" id="GitHub" ng-model="user.gitHub" name="GitHub url">
             </div>
+        </div>
 
-            <div class="align"> 
-                <select name="avatars">
-                    <option value="" disabled selected>Choose One</option>
-                    <option value="" data-icon="/img/flower2.jpg" class="left circle">Tulip</option>
-                    <option value="orchid" data-icon="/img/flower3.jpg" class="left circle">Orchid</option>
-                    <option value="daisy" data-icon="/img/flower4.jpg" class="left circle">Daisy</option>
-                </select>
-                <label>Avatar</label>
+        <div class="row">
+            <div class="align avatars"> 
+                <ul>
+                    <li>
+                        <img ng-src="{{ '/img/flower2.jpg'}}" alt="purple tulip">
+                    </li>
+                    <li>
+                        <img ng-src="{{'/img/flower3.jpg'}}" alt="purple orchid">
+                    </li>
+                    <li>
+                        <img ng-src="{{'/img/flower4.jpg'}}" alt="purple daisy">
+                    </li>
+                </ul>
             </div>
+        </div>
+
+        <div class="row">
+            <label for="submit">Submit</label>
+            <input type="submit">
         </div>
 
     </form>
