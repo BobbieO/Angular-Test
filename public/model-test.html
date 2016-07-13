@@ -3,40 +3,61 @@
 <head>
     <meta charset="utf-8">
     <title>Model Test</title>
-    
+
+  <!-- my css -->
+  <link rel="stylesheet" type="text/css" href="/css/modelTest.css">
+
 </head>
 <body>
+<div class="container">
     <h1>Form for Model Test</h1>
 
     <form novalidate>
-        
-    <label for="first_name">First Name</label>
-    <input type="text" id="first_name" ng-model="user.firstName" name="first name">
+            
+        <div class="row">
+            <div class="align">         
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" ng-model="user.firstName" name="first name">
+            </div>
 
-    <label for="last_name">Last Name</label>
-    <input type="text" id="last_name" ng-model="user.lastName" name="last name">
+            <div class="align"> 
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" ng-model="user.lastName" name="last name">
+            </div>
+        </div>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" ng-model="user.email" name="email">
+        <div class="row">
+            <div class="align"> 
+                <label for="email">Email</label>
+                <input type="email" id="email" ng-model="user.email" name="email">
+            </div>
 
-    <label for="birthday">Birthday</label>
-    <input type="date" id="birthday" ng-model="user.birthday" name="birthday">
+            <div class="align"> 
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" ng-model="user.birthday" name="birthday">
+            </div>
+        </div>
 
-    <label for="GitHub">GitHub URL</label>
-    <input type="text" id="GitHub" ng-model="user.gitHub" name="GitHub url">
+        <div class="row">
+            <div class="align"> 
+                <label for="GitHub">GitHub URL</label>
+                <input type="text" id="GitHub" ng-model="user.gitHub" name="GitHub url">
+            </div>
 
-    <label for="avatars">Select an Image</label>
-    <select name="avatars">
-        <option value="tulip"><img ng-src="{{'/img/flower2.jpg'}}">Tulip</option>
-        <option value="orchid"><img ng-src="{{'/img/flower3.jpg'}}">Orchid</option>
-        <option value="daisy"><img ng-src="{{'/img/flower4.jpg'}}">Daisy</option>
-    </select>
-    <input type="submit">
-
+            <div class="align"> 
+                <select name="avatars">
+                    <option value="" disabled selected>Choose One</option>
+                    <option value="" data-icon="/img/flower2.jpg" class="left circle">Tulip</option>
+                    <option value="orchid" data-icon="/img/flower3.jpg" class="left circle">Orchid</option>
+                    <option value="daisy" data-icon="/img/flower4.jpg" class="left circle">Daisy</option>
+                </select>
+                <label>Avatar</label>
+            </div>
+        </div>
 
     </form>
-
-
+</div>
+         
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 
     <script type="text/javascript" src="/js/modelTest.js"></script>
